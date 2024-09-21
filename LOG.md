@@ -19,4 +19,8 @@ When asking about wasi-filesystem in the Bevy discord's rust channel, I got this
 But this repo managed to create the necessary bindings: 
 https://github.com/GoogleChromeLabs/wasi-fs-access
 
+ ---
+
+ Following the tutorial, I got it to run. There's now a wasm canvas showing a bevy-rendered circle, and on top of it is the sveltekit ui which is just a header and a button. 
  
+ Next I'll want to transmit the button press into the wasm container. 
