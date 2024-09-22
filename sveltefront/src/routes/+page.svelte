@@ -1,5 +1,13 @@
 <script lang="ts">
-  import Game from "../lib/components/Client.svelte";
+    import Game from "../lib/components/Client.svelte";
+
+    function handleClick() {
+        console.log("Clicked");
+    }
+
+    export function button_is_pressed() {
+        console.log("Button is pressed");
+    }
 
 </script>
 
@@ -10,7 +18,7 @@
 
     <h1>Testing stuff for Karta</h1>
     
-    <button>
+    <button on:click={handleClick}>
         Clickity
     </button>
     

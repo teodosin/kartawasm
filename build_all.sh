@@ -1,5 +1,5 @@
 rustup target add wasm32-unknown-unknown
-rustup target add wasm32-wasi
+# rustup target add wasm32-wasi
 cargo install wasm-bindgen-cli
 
 cd rustwasm
