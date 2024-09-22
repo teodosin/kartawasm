@@ -1,6 +1,6 @@
 <script>
     import { onMount } from "svelte";
-    import __wbg_init from "../../assets/bindings/rustwasm";
+    import __wbg_init from "../../assets/wasm_client/rustwasm";
   
     onMount(async () => {
       await __wbg_init();

@@ -24,3 +24,7 @@ https://github.com/GoogleChromeLabs/wasi-fs-access
  Following the tutorial, I got it to run. There's now a wasm canvas showing a bevy-rendered circle, and on top of it is the sveltekit ui which is just a header and a button. 
  
  Next I'll want to transmit the button press into the wasm container. 
+
+ ---
+
+ Day two. It occurred to me that piping into the Bevy ECS from outside may not be straightforward. Events have to somehow be created manually and inserted into the ECS, and vice versa events sent out by the ECS have to be converted into something typescript can understand. 

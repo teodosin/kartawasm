@@ -1,8 +1,12 @@
-use bevy::{prelude::{*, Circle}, sprite::MaterialMesh2dBundle};
+use bevy::{
+    prelude::{Circle, *},
+    sprite::MaterialMesh2dBundle,
+};
 
 fn main() {
     let mut window_plugin = WindowPlugin::default();
     window_plugin.primary_window = Some(Window {
+        fit_canvas_to_parent: true,
         title: "Game".to_string(),
         canvas: Some("#game_canvas".to_string()), // This is the important part
         ..Default::default()
@@ -10,6 +14,7 @@ fn main() {
     let plugins = DefaultPlugins.set(window_plugin);
     App::new()
         .add_plugins(plugins)
+
         .add_systems(Startup, setup)
         .run();
 }
